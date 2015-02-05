@@ -17,7 +17,8 @@ var sumPrices = prices.reduce(function(firstPrice, nextPrice) {
 //need to get count of all of the items that have price
 prices.length;
 //divide sum of prices array by count of prices
-
+var avgPrice = sumPrices / prices.length;
+  console.log("The average price is" + " " + "$" + avgPrice);
 
 
  
