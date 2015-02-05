@@ -11,7 +11,9 @@ var prices = items.map(function(item) {
   return item.price;
 });
 //sum of prices array
-
+var sumPrices = prices.reduce(function(firstPrice, nextPrice) {
+  return  firstPrice + nextPrice;
+});
 //need to get count of all prices
 prices.length;
 //divide sum of prices array by count of prices
