@@ -47,13 +47,22 @@ function isVowel(char){
 // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
 // ---------------------
 
-function sum(){
+function sum(nums){
   //...
+  var theAnswer = nums.reduce(function(firstNumber, secondNumber) {
+    return firstNumber + secondNumber;
+  });
 
+  return theAnswer;
 }
 
-function multiply(){
+function multiply(nums){
   //...
+  var theAnswer = nums.reduce(function(firstNumber, secondNumber) {
+    return firstNumber * secondNumber;
+  });
+
+  return theAnswer;
 }
 
 // ---------------------
@@ -73,7 +82,16 @@ function reverse(string){
 // ---------------------
 
 function findLongestWord(words){
-    //...
+    //...Need to find length of each word  in array?
+    //...Map the length of each word?
+    //...then? 
+    var longestWord = "";
+
+    [looping words start]
+      [currentWord]
+      longestWord = currentWord;
+
+    [looping words end]
 }
 
 // ---------------------

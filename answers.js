@@ -43,6 +43,52 @@ var costBetween = items.filter(function(item){
   return item.price >= 14 && item.price <= 18;
 });
 
+//3.
+// Show me how find the item with a "GBP" currency code and print its name and price. Please console.log the one you find.
+// 1970s Schlitz Malt Liquor Glass Beer Pitcher costs £18
+
+if (items.currency_code = "GBP") {
+  console.log(items.title + "costs" + items.price);
+}
+
+
+
+
+
+
+//4.
+//Show me how to find which items are made of wood. Please console.log the ones you find.
+//SALE Mid Century Siesta Ware White Mug with Anchor - Set of 3 is made of wood.
+//Bottle cap catcher personalized. Man cave gift for him- Wooden Beer pub sign - Groomsmen wedding Gift is made of wood.
+//Medium Size, Welcome To Our Firepit-Where Friends And Marshmallows Get Toasted At The Same Time-Painted Wood Sign-Custom Colors is made of wood.
+//Magnetic Wall Mount Bottle Opener Barware Set - Stainless Steel or Black - Personalized if you like! is made of wood.
+//Engraved Pocket Knife, Personalized Groomsmen Gift, Ring Bearer Gift, Graduation Gift, 4 Knives is made of wood.
+
+
+items.forEach(function(item) {
+console.log[item.title, item.description];
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
