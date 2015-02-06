@@ -7,12 +7,12 @@
 // ---------------------
 
 function max(a, b){
-    //...
-    if (a > b) {
-      return a;
-    } else {
-      return b;
-    }
+  //...
+  if (a > b) {
+    return a;
+  } else {
+    return b;
+  }
 }
 
 // ---------------------
@@ -20,14 +20,14 @@ function max(a, b){
 // ---------------------
 
 function maxOfThree(a, b, c){
-    //...
-    if (a > b && a > c) {
-      return a;
-    } else if (b > a && b > c) {
-      return b;
-    } else {
-      return c;
-    }
+  //...
+  if (a > b && a > c) {
+    return a;
+  } else if (b > a && b > c) {
+    return b;
+  } else {
+    return c;
+  }
 }
 
 // ---------------------
@@ -48,19 +48,24 @@ function isVowel(char){
 // ---------------------
 
 function sum(){
-    //...
+  //...
+
 }
 
 function multiply(){
-    //...
+  //...
 }
 
 // ---------------------
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
-    //...
+function reverse(string){
+  //
+  var splitString = string.split("");
+  var reverseString = splitString.reverse();
+  var joinString = reverseString.join("");
+  return joinString;
 }
 
 // ---------------------
