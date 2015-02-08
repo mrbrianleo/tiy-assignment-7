@@ -99,8 +99,15 @@ function findLongestWord(words) {
 // Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
 // ---------------------
 
-function filterLongWords(words, i){
-    //...
+var arrayOfWords = ["brown", "red", "green", "blue", "turquoise", "yellow", "gold", "somereallylongcolor"]
+var i;
+
+function filterLongWords(words, i) {
+
+  var longestWords = arrayOfWords.filter(function(word) {
+    return word.length > i;
+  });
+  return longestWords;
 }
 
 // ---------------------
