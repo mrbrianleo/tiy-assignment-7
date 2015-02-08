@@ -47,9 +47,11 @@ var costBetween = items.filter(function(item){
 // Show me how find the item with a "GBP" currency code and print its name and price. Please console.log the one you find.
 // 1970s Schlitz Malt Liquor Glass Beer Pitcher costs £18
 
-if (items.currency_code = "GBP") {
-  console.log(items.title + "costs" + items.price);
-}
+var currencyGBP = items.filter(function(item){
+  return item.currency_code === "GBP";
+});
+
+currencyGBP[0].title;
 
 //4.
 //Show me how to find which items are made of wood. Please console.log the ones you find.
