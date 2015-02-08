@@ -18,7 +18,7 @@ var sumPrices = prices.reduce(function(firstPrice, nextPrice) {
 prices.length;
 //divide sum of prices array by count of prices
 var avgPrice = sumPrices / prices.length;
-  console.log("The average price is" + " " + "$" + avgPrice);
+  console.log("The average price is" + " " + "$" + avgPrice.toFixed(2));
 
 //2.
 // Show me how to get an array of items that cost between $14.00 and $18.00 USD
@@ -51,7 +51,7 @@ var currencyGBP = items.filter(function(item){
   return item.currency_code === "GBP";
 });
 
-currencyGBP[0].title;
+console.log(currencyGBP[0].title + " costs £" + currencyGBP[0].price);
 
 //4.
 //Show me how to find which items are made of wood. Please console.log the ones you find.
@@ -61,11 +61,13 @@ currencyGBP[0].title;
 //Magnetic Wall Mount Bottle Opener Barware Set - Stainless Steel or Black - Personalized if you like! is made of wood.
 //Engraved Pocket Knife, Personalized Groomsmen Gift, Ring Bearer Gift, Graduation Gift, 4 Knives is made of wood.
 
+var madeOfWood = items.filter(function(item) {
+  return item.materials.indexOf("wood") >= 0;
+})
 
-items.forEach(function(item) {
-console.log[item.title, item.description];
-});
-
+madeOfWood.forEach(function(item) {
+  console.log(item.title + " is made of wood.");
+})
 
 
 //5.
@@ -95,13 +97,28 @@ console.log[item.title, item.description];
 // the three broomsticks glass
 // personalized harry potter glass
 
-some code goes here
+
+var eightMaterials = items.filter(function(item) {
+  return item.materials.length >= 8;
+})
+
+eightMaterials.forEach(function(item) {
+  console.log(item.title + " has " + item.materials.length + " materials:"); 
+  item.materials.forEach(function(material) {
+    console.log(material);
+  })
+})
+
 
 //6.
 //Show me how to calculate how many items were made by their sellers
 //18 were made by their sellers
 
-some code goes here
+var madeBySeller = items.filter(function(item) {
+  return item.who_made === "i_did";
+})
+
+console.log(madeBySeller.length + " were made by their sellers");
 
 
 
