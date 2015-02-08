@@ -51,11 +51,6 @@ if (items.currency_code = "GBP") {
   console.log(items.title + "costs" + items.price);
 }
 
-
-
-
-
-
 //4.
 //Show me how to find which items are made of wood. Please console.log the ones you find.
 //SALE Mid Century Siesta Ware White Mug with Anchor - Set of 3 is made of wood.
@@ -68,6 +63,44 @@ if (items.currency_code = "GBP") {
 items.forEach(function(item) {
 console.log[item.title, item.description];
 });
+
+
+
+//5.
+//Show me how to find which items are made of eight or more materials. Please console.log the ones you find.
+// Qty of 2 Groomsmen Gift - Stainless Steel Personalized Bottle Opener - NO Capcatcher has 9 materials:
+// wall mount bottle opener
+// wedding
+// man cave
+// christmas gift
+// guy gift
+// fathers day
+// home bar
+// beer
+// bar
+// The Three Broomsticks Customizable Beer Stein Mug, Harry Potter  Inspired, hogsmeade village, harry potter gift, three broomsticks mug  has 13 materials:
+// glass
+// sandblast cabinet
+// vinyl
+// beer glass
+// pint glass
+// etched pint glass
+// etched glass
+// etched beer glass
+// 16 oz pint
+// beer gift
+// etched harry potter glass
+// the three broomsticks glass
+// personalized harry potter glass
+
+some code goes here
+
+//6.
+//Show me how to calculate how many items were made by their sellers
+//18 were made by their sellers
+
+some code goes here
+
 
 
 

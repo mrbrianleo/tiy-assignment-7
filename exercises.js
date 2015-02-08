@@ -82,10 +82,21 @@ function reverse(string){
 // ---------------------
 
 function findLongestWord(words){
-    //...Need to find length of each word  in array?
+    //...Need to find length of each word in array?
     //...Map the length of each word?
     //...then? 
-    var longestWord = "";
+    var startingWord = "";
+    var currentWord = "";
+    var longestWord = currentWord;
+
+    if (var longestWord = "";)
+
+
+if wordInArray > longestWord {
+  return wordInArray
+}
+
+for ()
 
     [looping words start]
       [currentWord]
