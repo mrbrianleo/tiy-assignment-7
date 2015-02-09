@@ -111,3 +111,105 @@ set empty object [mapobj]
 
 
 
+
+var myArray = ["brown", "red", "green", "blue", "turquoise", "yellow", "gold"]
+
+
+= if(longestWord > currentWord) {
+  return longestWord;
+} else {
+  return currentWord = longestWord
+}
+
+
+
+for (var longestWord = ""; longestWord.length > currentWord.length;)
+  
+
+
+
+
+
+
+
+
+
+var arrayOfWords = ["brown", "red", "green", "blue", "turquoise", "yellow", "gold", "somereallylongcolor"]
+
+function findLongestWord(words) {
+
+  var longestWord = "";
+
+  arrayOfWords.forEach(function(word) {
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    } 
+  });
+  return longestWord;
+}
+
+function filterLongWords(words, i)
+
+  arrayOfWords.filter(function(word) {
+    if (word.length > i) {
+      return word;
+  })
+}
+
+var arrayOfWords = ["brown", "red", "green", "blue", "turquoise", "yellow", "gold", "somereallylongcolor"]
+var i;
+
+function filterLongWords(words, i) {
+
+  var longestWords = arrayOfWords.filter(function(word) {
+    return word.length > i;
+  });
+  return longestWords;
+}
+
+
+function charFreq(string){
+    //...
+    //need to split the string to an array of letters
+    var splitChars = string.split("");
+    //need to count occurence of each string in array
+    //create empty object
+    var myObj;
+
+  splitChars.forEach(function(letter) {
+    if (letter = myObj) {
+      return letter++;
+    } myObj = letter;
+  })
+  return myObj;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
