@@ -87,7 +87,7 @@ function findLongestWord(words) {
 
   var longestWord = "";
 
-  arrayOfWords.forEach(function(word) {
+  words.forEach(function(word) {
     if (word.length > longestWord.length) {
       longestWord = word;
     } 
@@ -104,7 +104,7 @@ var i;
 
 function filterLongWords(words, i) {
 
-  var longestWords = arrayOfWords.filter(function(word) {
+  var longestWords = words.filter(function(word) {
     return word.length > i;
   });
   return longestWords;
@@ -118,7 +118,7 @@ var myString = "ababababababcdcdcdcdbdbdbdbacacac";
 
 function charFreq(string) {
 
-  var splitString = myString.split("");
+  var splitString = string.split("");
 
   var letterMap = splitString.reduce(function(finalMap, letter, index) {
     finalMap[letter] = index;

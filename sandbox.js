@@ -169,25 +169,70 @@ function filterLongWords(words, i) {
 
 
 function charFreq(string){
-    //...
-    //need to split the string to an array of letters
-    var splitChars = string.split("");
-    //need to count occurence of each string in array
-    //create empty object
-    var myObj;
+  //...
+  //need to split the string to an array of letters
+  var splitChars = string.split("");
+  //need to count occurence of each string in array
+  //create empty object
+  var myObj;
 
-  splitChars.forEach(function(letter) {
+  var newObject = splitChars.forEach(function(letter) {
     if (letter = myObj) {
-      return letter++;
-    } myObj = letter;
-  })
-  return myObj;
+      return myObj = letter++;
+    } else { 
+      return myObj = letter;
+    }
+  });
+  return newObject;
 }
 
 
 
+function charFreq(string) {
+
+  var myObj;
+
+  var splitChars = string.split("");
+
+  splitChars.forEach(function(letter) {
+    if (letter = myObj) {
+      myObj = letter++;
+    } 
+  });
+  return myObj;
+}
 
 
+var myString = "ababababdbdbcabdbcdcabcbacbdb";
+
+var splitChars = myString.split("");
+
+var letterMap = myString.reduce(function(finalMap, letter, index) {
+  finalMap[letter] = index;
+  return finalMap;
+}, {});
+
+
+var letterMap = myString.reduce(function(finalMap, letter, index) {
+  finalMap[letter] = index;
+  return finalMap;
+}, {});
+
+
+
+
+var myString = "ababababababcdcdcdcdbdbdbdbacacac";
+
+function charFreq(string) {
+
+  var splitString = myString.split("");
+
+  var letterMap = splitString.reduce(function(finalMap, letter, index) {
+    finalMap[letter] = index;
+    return finalMap;
+  }, {});
+  return letterMap;
+}
 
 
 
